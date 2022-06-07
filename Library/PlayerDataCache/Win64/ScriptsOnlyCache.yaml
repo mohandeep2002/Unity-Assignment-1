@@ -1195,4 +1195,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: E:/Unity Projects/Blank Project/Windows Build/Blank Project.exe
+  playerPath: E:/Unity Projects/Blank Project/Windows Build V2/Blank Project.exe

@@ -22,6 +22,7 @@ public class SpawnManager : MonoBehaviour
     {
         Vector3 newVector = new Vector3(Random.Range(-9.26f, 9f), Random.Range(4.8f, -4.6f), 0);
         GameObject spawn = Instantiate(cube, newVector, Quaternion.LookRotation(new Vector3(0.18f, -0.24f, 0)));
+        // GameObject spawn = Instantiate(cube, newVector, Quater);
         spawn.transform.parent = cubeparent.transform;
         _ui.OnCubeT();
     }
