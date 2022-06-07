@@ -18,7 +18,7 @@ public class Cube : MonoBehaviour
             //Debug.Log(rg.velocity);
             Debug.Log(rg.velocity.x+" " + rg.velocity.y+ " "+ rg.velocity.z);
             Debug.Log(collision.rigidbody.velocity.x + " " + collision.rigidbody.velocity.y + " " + collision.rigidbody.velocity.z);
-            if (rg.velocity.magnitude < collision.rigidbody.velocity.magnitude)
+            if (rg.velocity.y < collision.rigidbody.velocity.y)
             {
                 Debug.Log("This object");
                 Destroy(this.gameObject);
