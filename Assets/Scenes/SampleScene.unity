@@ -248,6 +248,9 @@ MonoBehaviour:
   cubeParent: {fileID: 1384476595}
   capsuleParent: {fileID: 1372297490}
   sphereParent: {fileID: 954239568}
+  cubePrefab: {fileID: 3900871255674594775, guid: d735bd6420787d84ebd7269e01ccaff3, type: 3}
+  capsulePrefab: {fileID: 8235908070827568814, guid: acbd1e971fc701141bd353d5196d927a, type: 3}
+  spherePrefab: {fileID: 7082400379545069657, guid: 9d3bd3999854c4a429e999eaec62c33f, type: 3}
 --- !u!1 &182926131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1194,6 +1197,7 @@ GameObject:
   - component: {fileID: 657723864}
   - component: {fileID: 657723863}
   - component: {fileID: 657723862}
+  - component: {fileID: 657723865}
   m_Layer: 5
   m_Name: Sphere
   m_TagString: Untagged
@@ -1265,7 +1269,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 657723863}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 657723865}
+        m_TargetAssemblyTypeName: ButtonBehaviour, Assembly-CSharp
+        m_MethodName: OnShpereButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &657723863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1304,6 +1320,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657723860}
   m_CullTransparentMesh: 1
+--- !u!114 &657723865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657723860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de02f5a76b9ef514f82cd5bf766ef354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1611,8 +1639,8 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1672,6 +1700,7 @@ GameObject:
   - component: {fileID: 1100817795}
   - component: {fileID: 1100817794}
   - component: {fileID: 1100817793}
+  - component: {fileID: 1100817796}
   m_Layer: 5
   m_Name: Capsule
   m_TagString: Untagged
@@ -1743,7 +1772,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1100817794}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1100817796}
+        m_TargetAssemblyTypeName: ButtonBehaviour, Assembly-CSharp
+        m_MethodName: OnCapsulesButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1100817794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1782,6 +1823,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100817791}
   m_CullTransparentMesh: 1
+--- !u!114 &1100817796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100817791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de02f5a76b9ef514f82cd5bf766ef354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1372297490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1856,6 +1909,7 @@ GameObject:
   - component: {fileID: 1517009588}
   - component: {fileID: 1517009587}
   - component: {fileID: 1517009586}
+  - component: {fileID: 1517009589}
   m_Layer: 5
   m_Name: Cubes
   m_TagString: Untagged
@@ -1927,7 +1981,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1517009587}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1517009589}
+        m_TargetAssemblyTypeName: ButtonBehaviour, Assembly-CSharp
+        m_MethodName: OnCubesButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1517009587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1966,6 +2032,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517009584}
   m_CullTransparentMesh: 1
+--- !u!114 &1517009589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517009584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de02f5a76b9ef514f82cd5bf766ef354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1599116954
 GameObject:
   m_ObjectHideFlags: 0

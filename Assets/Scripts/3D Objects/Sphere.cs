@@ -16,7 +16,7 @@ public class Sphere : MonoBehaviour
         {
             //Debug.Log(collision.rigidbody.velocity);
             //Debug.Log(rg.velocity);
-            if (rg.velocity.x < collision.rigidbody.velocity.x)
+            if (rg.velocity.magnitude < collision.rigidbody.velocity.magnitude)
             {
                 Debug.Log("This object");
                 Destroy(this.gameObject);
